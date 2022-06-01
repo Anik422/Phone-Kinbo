@@ -1,0 +1,191 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-image: url("../image/bg-2.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+.container{
+    margin-bottom: 100px;
+}
+.d-inline-block{
+    border-radius: 50%;
+}
+.btn-group-sm > .btn, .btn-sm {
+    font-size: 1.2rem;
+    border-radius: .2rem;
+    font-weight: 500;
+}
+.navbar-brand{
+    font-size: 30px;
+    padding-left: 0;
+    margin-left: 0;
+    font-weight: 600;
+}
+.logo{
+    padding-left: 0;
+    margin-left: 0;
+
+}
+.carousel-indicators [data-bs-target]{
+    background-color: orange;
+}
+.carousel-section{
+    background-image: url("../image/bg-1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.col-xl-6{
+    padding: 0px 60px;
+}
+.col-xl-6 p{
+    text-align: justify;
+    color: dimgray;
+    font-size: 20px;
+}
+.buy-now-btn{
+    background-image: linear-gradient(to bottom, rgb(150, 150, 150) 0%, black 100%);
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 25px;
+    font-weight: 700px;
+    border-radius: 7px;
+}
+.see-all-link{
+    text-decoration: none;
+    color: orange;
+    font-weight: 600;
+}
+.card{
+    border: none;
+    box-shadow: 5px 5px 10px gray;
+    /* border-radius: 20px; */
+}
+.card-body{
+    text-align: center;
+}
+.card-body h5{
+    font-weight: 600;
+}
+.card-body p{
+    text-align: center;
+    color: dimgray;
+}
+.card-footer{
+    padding-top: 0;
+    border-top: none;
+    background-color: #fff;
+}
+.card-footer h3, .card-footer h6{
+    text-align: center;
+    margin: 15px;
+}
+
+.categories-title{
+    text-align: center;
+    position: relative;
+}
+.categories-title h1::after{
+    content: '';
+    width: 10%;
+    height: 7px;
+    position: absolute;
+    bottom: -25%;
+    left: 45%;
+    border-radius: 10px;
+    animation-name: bg-change;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes bg-change {
+    0% {
+        background: #ec008c;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    25%{
+        background: #5433FF;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }    
+    50%{
+        background: #5433FF;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    100%{
+        background: #e65c00;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #F9D423, #e65c00);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #F9D423, #e65c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+
+    }
+}
+.cat{
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 20px 0px ;
+    width: 170px;
+    height: 180px;
+    margin: 20px 0px;
+}
+
+.cat h4{
+    text-align: center;
+}
+.right-img img{
+    width: 550px;
+}
+
+.card-footer{
+    border: none;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.height{
+    padding: 1.8rem 1rem;
+}
+#contact, .carousel-section{
+    background-color: #FEEAE9;
+    border-radius: 10px;
+}
+#contact{
+    height: 300px;
+    border-radius: 10px;
+}
+#contact h6{
+    color: dimgray;
+}
+footer{
+    color: dimgray;
+    text-align: center;
+}
+
+@media only screen and (max-width:600px){
+    .container{
+        margin-bottom: 50px;
+    }
+    .btn-group-sm > .btn, .btn-sm {
+        font-size: 1rem;
+        border-radius: .2rem;
+        font-weight: 300;
+    }
+    .col-xl-6{
+        padding: 0px 30px;
+    }
+    .col-xl-6 p{
+        text-align: justify;
+        color: dimgray;
+        font-size: 10px;
+    }
+    .buy-now-btn{
+        background-image: linear-gradient(to bottom, rgb(150, 150, 150) 0%, black 100%);
+        color: #fff;
+        text-decoration: none;
+        padding: 5px 15px;
+        font-weight: 300px;
+        border-radius: 7px;
+    }
+}
